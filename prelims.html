@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Final Output</title>
+	<style>
+		#prelimList h3{
+			position: absolute;
+			color: white;
+			left: 200px;
+			top: 200px;
+			<text-transform: uppercase;
+			font-size: 80px;
+		}
+		#prelimList p a{
+			color: white;
+			left: 200px;
+			top: 350px;
+			position: absolute;
+			font-size: 40px;
+			text-decoration: none;
+		}
+
+		#prelimList p a::before{
+			content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background: white;
+	transform: scaleX(0);
+	transition: transform 0.5s ease-in-out;
+	transform-origin: right;
+		}
+
+		#prelimList p a:hover::before{
+			transform: scaleX(1);
+	transform-origin: left;
+		}
+
+        #sec a{
+			color: white;
+			left: 200px;
+			top: 450px;
+			position: absolute;
+			font-size: 40px;
+			text-decoration: none;
+		}
+
+		#sec a::before{
+			content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background: white;
+	transform: scaleX(0);
+	transition: transform 0.5s ease-in-out;
+	transform-origin: right;
+		}
+
+		#sec a:hover::before{
+			transform: scaleX(1);
+	transform-origin: left;
+		}
+
+		#thir a{
+			color: white;
+			left: 200px;
+			top: 550px;
+			position: absolute;
+			font-size: 40px;
+			text-decoration: none;
+		}
+
+		#thir a::before{
+			content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background: white;
+	transform: scaleX(0);
+	transition: transform 0.5s ease-in-out;
+	transform-origin: right;
+		}
+
+		#thir a:hover::before{
+			transform: scaleX(1);
+	transform-origin: left;
+		}
+
+		#for a{
+			color: white;
+			left: 500px;
+			top: 350px;
+			position: absolute;
+			font-size: 40px;
+			text-decoration: none;
+		}
+
+		#for a::before{
+			content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background: white;
+	transform: scaleX(0);
+	transition: transform 0.5s ease-in-out;
+	transform-origin: right;
+		}
+
+		#for a:hover::before{
+			transform: scaleX(1);
+	transform-origin: left;
+		}
+
+		#fif a{
+			color: white;
+			left: 500px;
+			top: 450px;
+			position: absolute;
+			font-size: 40px;
+			text-decoration: none;
+		}
+
+		#fif a::before{
+			content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background: white;
+	transform: scaleX(0);
+	transition: transform 0.5s ease-in-out;
+	transform-origin: right;
+		}
+
+		#fif a:hover::before{
+			transform: scaleX(1);
+	transform-origin: left;
+		}
+
+		#six a{
+			color: white;
+			left: 500px;
+			top: 550px;
+			position: absolute;
+			font-size: 40px;
+			text-decoration: none;
+		}
+
+		#six a::before{
+			content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background: white;
+	transform: scaleX(0);
+	transition: transform 0.5s ease-in-out;
+	transform-origin: right;
+		}
+
+		#six a:hover::before{
+			transform: scaleX(1);
+	transform-origin: left;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">
+			Final Website
+		</a>
+		<div class="group">
+			<ul class="navigation">
+				<li><input type="search" value="" id="search" onchange="openPage()" placeholder="Search Here . . ."></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="prelims.html">Prelims</a></li>
+				<li><a href="midterms.html">Midterms</a></li>
+				<li><a href="finals.html">Finals</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+		<div id="prelimList">
+			<h3>ACTIVITIES TO SEARCH</h3>
+			<p><a href="H1.html">Act 1.1</a></p>
+		</div>
+			<p id="sec"><a href="H2.html">Act 1.2</a></p>
+			<p id="thir"><a href="H3.html">Act 1.3</a></p>
+			<p id="for"><a href="H4.html">Act 1.4</a></p>
+			<p id="fif"><a href="H5.html">Act 1.5</a></p>
+			<p id="six"><a href="H6.html">Act 1.6</a></p>
+			
+			<script>
+				function openPage(){
+					var x = document.getElementById("search").value;
+
+					if(x === "Act 1.1"){
+						window.open("H1.html");
+					}
+
+					if (x === "Act 1.2") {
+						window.open("H2.html")
+					}
+
+					if (x === "Act 1.3") {
+						window.open("H3.html")
+					}
+
+					if (x === "Act 1.4") {
+						window.open("H4.html")
+					}
+
+					if (x === "Act 1.5") {
+						window.open("H5.html")
+					}
+
+					if (x === "Act 1.6") {
+						window.open("H6.html")
+					}
+
+				}
+			</script>
+</body>
+</html>
